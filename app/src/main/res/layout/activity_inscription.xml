@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context=".InscriptionActivity">
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tvTitre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:hint="Ajouter un etudiant"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/etNom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Nom"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/etPrenom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Prenom"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp" />
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawablePadding="8dp"
+                android:background="@drawable/custom_edittext"
+                android:hint="Email"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/etTel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Telephone"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="20dp" />
+
+    <EditText
+        android:id="@+id/etClasse"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawablePadding="8dp"
+        android:background="@drawable/custom_edittext"
+        android:hint="Classe"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/cardview_dark_background"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+    <Button
+        android:id="@+id/btnValider"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="VALIDER"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"/>
+        <Space
+            android:layout_width="16dp"
+            android:layout_height="1dp" />
+    <Button
+        android:id="@+id/btnAnnuler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="ANNULER"
+        android:textStyle="bold" />
+    </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
